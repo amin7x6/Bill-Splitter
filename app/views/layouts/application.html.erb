@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BillSplitter</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container"><br>
+          <div class="header clearfix">
+            <nav>
+              <ul class="nav nav-pills">
+                <li role="presentation"><a href="welcome#index">Home</a></li>
+                <li role="presentation"><a href="/bill_splitter">Dashboard</a></li>
+              </ul>
+            </nav>
+          </div><br>
+    <%= yield %>
+  </body>
+</html>
